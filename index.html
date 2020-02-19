@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!----By Blake Wood-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="buttonContainer">
+        <h1>Counter</h1>
+        <div id="controlContainer">
+            <div id="minusButton"><button id="minusOne">-</button></div>
+            <div id="counterDisplay">0</div>
+            <div id="plusButton"><button id="plusOne">+</button></div>
+        </div>
+    </div>
+    <script>
+        
+        var plusButton = document.getElementById("plusOne");
+        var minusButton = document.getElementById("minusOne");
+        
+        
+
+        plusButton.addEventListener("click", function (){
+            var displayDiv = document.getElementById("counterDisplay");
+            var numberInCounter = parseInt(displayDiv.innerHTML);
+            //grab number in counter
+            var addOne = numberInCounter + 1;
+            displayDiv.innerHTML = addOne;
+       });
+
+       minusButton.addEventListener("click", function(){
+            
+            var displayDiv = document.getElementById("counterDisplay");
+            var numberInCounter = parseInt(displayDiv.innerHTML);
+            var minusOne = numberInCounter - 1;
+            displayDiv.innerHTML = minusOne;
+       });
+       
+
+    </script>    
+</body>
+</html>

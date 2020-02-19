@@ -1,0 +1,53 @@
+button{
+    border:2px solid black;
+    background-color: white;
+    text-align: center;
+    display:block;
+    font-size:30px;
+    color:black;
+    width:45px;
+    height:45px;
+}
+#buttonContainer
+{
+    background-color: white;
+    display:inline-block;
+    width:450px;
+    height:250px;
+    text-align: center;
+    border:2px solid black;
+}
+#controlContainer
+{
+    margin-top:30px;
+}
+#minusButton
+{
+    display:inline-block;   
+    padding:10px;
+}
+#counterDisplay
+{
+    display:inline-block;
+    text-align:center;
+    _border:2px black solid;
+    font-size: 80px;
+    vertical-align: middle;
+    margin-top:-15px;
+}
+#plusButton
+{
+    display:inline-block;
+    padding:10px;
+}
+
+#plusOne 
+{
+    vertical-align: middle;
+    margin-left:20px;
+}
+#minusOne
+{
+    vertical-align: middle;
+    margin-right:20px;
+}
